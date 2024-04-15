@@ -3,21 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-blue mt-50' >
+      <h1 className=' text-2xl font-normal text-center'>Our collection</h1>
+      <p className=''>Introducing our Coffee Collection, a selection of unique
+        coffees from different roast types and origins, expertly roasted
+        in small batches and shipped fresh weekly.
+      </p>
+      <div className='flex bg-blue'>
+      <button className='bg-blue'>All products</button>
+      <button>All products</button>
+      </div>
     </div>
   );
 }
