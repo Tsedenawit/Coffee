@@ -15,7 +15,7 @@ function App() {
   } ,[])
   console.log(coffe )
   return (
-    <div className='bg-slate-700 mt-[300px] absolute ml-[120px]' >
+    <div className='bg-slate-400 mt-[300px] absolute ml-[120px]' >
       <h1 className=' text-2xl font-normal text-center'>Our collection</h1>
       <br></br>
       <p className=''>Introducing our Coffee Collection, a selection of unique
@@ -23,21 +23,24 @@ function App() {
         in small batches and shipped fresh weekly.
       </p>
       <br></br>
-      <div className='flex bg-blue'>
-      <button className='bg-blue'>All products</button>
+      <div className='flex'>
+      <button className='bg-blue-100 max-w-25 text-center rounded'>All products</button>
       <button>All products</button>
-       {coffe.map((datas)=>{
+      </div>
+      <div className='grid grid-cols-3 gap-4 mt-10'>
+       {coffe.map((datas)=>
       <div id={datas.id}>
-      {datas.popular && <div className ='bg-yellow-200 rounded-full '><h3>Popular</h3></div>}
+      {datas.popular && <div className ='bg-amber-400 rounded-full '><h3>Popular</h3></div>}
       <div>
-      <img src={datas.img}/>
+      <img src="../public/Images/bg-cafe.jpg" alt="not"/>
       </div>
-      <div className='flex'></div>
+      <div className='flex '>
       {datas.name}
-      {datas.price}
+      <div className='bg-slate-300 max-w-20 text-center rounded-md content-end'>{datas.price}</div>
+      </div></div>
+      )} 
       </div>
-      })} 
-      </div>
+      
     </div>
   );
 }
