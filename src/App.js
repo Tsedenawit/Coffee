@@ -15,10 +15,10 @@ function App() {
   } ,[])
   console.log(coffe )
   return (
-    <div className='bg-slate-400 mt-[300px] absolute ml-[120px]' >
+    <div className='bg-slate-400 mt-[300px] absolute justify-items-center items-center grid' >
       <h1 className=' text-2xl font-normal text-center'>Our collection</h1>
       <br></br>
-      <p className='text-center'>Introducing our Coffee Collection, a selection of unique
+      <p className='text-center w-[250px] '>Introducing our Coffee Collection, a selection of unique
         coffees from different roast types and origins, expertly roasted
         in small batches and shipped fresh weekly.
       </p>
@@ -27,7 +27,7 @@ function App() {
       <button className='bg-blue-100 max-w-25 text-center rounded ml-10'>All products</button>
       <button className='bg-blue-100 max-w-25 text-center rounded ml-10'>All products</button>
       </div>
-      <div className='grid grid-cols-3 gap-4 mt-10 ml-20'>
+      <div className='grid grid-cols-3 gap-4 mt-10 '>
        {coffe.map((datas)=>
       <div key={datas.id}> 
       
