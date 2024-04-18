@@ -29,15 +29,23 @@ function App() {
       </div>
       <div className='grid grid-cols-3 gap-4 mt-10 ml-20'>
        {coffe.map((datas)=>
-      <div key={datas.id}>
-      {datas.popular && <div className ='bg-amber-400 rounded-full '><h3>Popular</h3></div>}
+      <div key={datas.id}> 
+      
       <div>
-      <img src={datas.image} alt="Coffee Shop Background Image" />
+      <div className ='bg-amber-400 rounded-full mt-2 ml-2 absolute w-20 text-center'> {datas.popular && <h3>Popular</h3>}</div>
+      <img src={datas.image} alt="Coffee Shop Background Image" className='rounded-xl' />
       </div>
+      
       <div className='flex '>
       {datas.name}
-      <div className='bg-slate-300 max-w-20 text-center rounded-md'>{datas.price}</div>
-      </div></div>
+      <div className='bg-slate-300 text-center w-[60px] rounded-md float-end'>{datas.price}</div>
+      </div>
+      <div className='flex'>
+      {datas.rating ? <img src='Images/Star_fill.svg'/>: <img src='Images/Star.svg'/> } 
+      {datas.rating}
+      <h2 className='text-grey-600'>({datas.votes} votes)</h2> 
+      </div>
+      </div>
       )} 
       </div>
       
