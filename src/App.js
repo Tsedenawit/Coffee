@@ -24,8 +24,8 @@ function App() {
       </p>
       <br></br>
       <div className='flex'>
-      <button className='bg-blue-100 max-w-25 text-center rounded ml-10'>All products</button>
-      <button className='bg-blue-100 max-w-25 text-center rounded ml-10'>All products</button>
+      <button className='bg-blue-100 w-35 text-center rounded '>All products</button>
+      <button className='bg-blue-100 max-w-25 text-center rounded '>Available products</button>
       </div>
       <div className='grid grid-cols-3 gap-4 mt-10 '>
        {coffe.map((datas)=>
@@ -44,6 +44,7 @@ function App() {
       {datas.rating ? <img src='Images/Star_fill.svg'/>: <img src='Images/Star.svg'/> } 
       {datas.rating}
       <h2 className='text-grey-600'>({datas.votes} votes)</h2> 
+      {!datas.available && <h3 className='text-red-700 '>Sold out</h3>}
       </div>
       </div>
       )} 
