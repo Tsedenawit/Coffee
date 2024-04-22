@@ -15,23 +15,23 @@ function App() {
   } ,[])
   console.log(coffe )
   return (
-    <div className='bg-slate-400 mt-[300px] absolute justify-items-center items-center grid' >
-      <h1 className=' text-2xl font-normal text-center'>Our collection</h1>
+    <div className='xl:bg-slate-400 mt-[300px] sm: mt-[90px] absolute grid bg-slate-400' >
+      <h1 className=' text-2xl font-normal text-center mt-5'>Our collection</h1>
       <br></br>
-      <p className='text-center w-[250px] '>Introducing our Coffee Collection, a selection of unique
+      <p className='xl:text-center w-[400px] sm: w-[200px] '>Introducing our Coffee Collection, a selection of unique
         coffees from different roast types and origins, expertly roasted
         in small batches and shipped fresh weekly.
       </p>
       <br></br>
-      <div className='flex'>
-      <button className='bg-blue-100 w-35 text-center rounded '>All products</button>
-      <button className='bg-blue-100 max-w-25 text-center rounded '>Available products</button>
+      <div className='xl:flex sm: ml-auto mr-auto '>
+      <button className='xl:bg-blue-100 w-35 text-center rounded sm:bg-blue-100 w-35 text-center rounded'>All products</button>
+      <button className='bg-blue-100 max-w-25 text-center rounded sm:bg-blue-100 w-35 text-center rounded'>Available products</button>
       </div>
-      <div className='grid grid-cols-3 gap-4 mt-10 '>
+      <div className='xl:grid grid-cols-3 gap-4 mt-10 sm:flex flex-col ml-auto mr-auto '>
        {coffe.map((datas)=>
       <div key={datas.id}> 
       
-      <div>
+      <div className=''>
       <div className ='bg-amber-400 rounded-full mt-2 ml-2 absolute w-20 text-center'> {datas.popular && <h3>Popular</h3>}</div>
       <img src={datas.image} alt="Coffee Shop Background Image" className='rounded-xl' />
       </div>
