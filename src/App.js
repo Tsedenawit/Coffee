@@ -15,7 +15,7 @@ function App() {
   } ,[])
   console.log(coffe )
   return (
-    <div className='xl:bg-slate-400 mt-[300px] sm: mt-[90px] absolute grid bg-slate-400' >
+    <div className='xl:bg-slate-800 mt-[300px] text-white sm: mt-[90px] absolute grid bg-gray-900' >
       <h1 className='xl:text-2xl font-normal text-center mt-5'>Our collection</h1>
       <br></br>
       <p className='xl:text-center w-[400px] items-center mt-0 mr-auto sm: w-[200px]'>Introducing our Coffee Collection, a selection of unique
@@ -23,7 +23,7 @@ function App() {
         in small batches and shipped fresh weekly.
       </p>
       <br></br>
-      <div className='xl:flex sm: ml-auto mr-auto '>
+      <div className='xl:flex sm: ml-auto mr-auto text-black '>
       <button className='xl:bg-blue-100 w-35 text-center rounded sm:bg-blue-100 w-35 text-center rounded'>All products</button>
       <button className='bg-blue-100 max-w-25 text-center rounded sm:bg-blue-100 w-35 text-center rounded'>Available products</button>
       </div>
@@ -31,7 +31,7 @@ function App() {
        {coffe.map((datas)=>
       <div key={datas.id}> 
       
-      <div className=''>
+      <div className='ml-auto mr-auto'>
       <div className ='bg-amber-400 rounded-full mt-2 ml-2 absolute w-20 text-center'> {datas.popular && <h3>Popular</h3>}</div>
       <img src={datas.image} alt="Coffee Shop Background Image" className='rounded-xl' />
       </div>
