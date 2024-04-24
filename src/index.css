@@ -6,10 +6,13 @@ body {
  background-image: url(../public/Images/bg-cafe.jpg);
  background-repeat: no-repeat;
  background-size: cover;
- background-color:rgb(3 7 18);
+ background-color:#111315;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#cont{
+  background-color: #1B1D1F;
 }
