@@ -15,7 +15,7 @@ function App() {
   } ,[])
   console.log(coffe )
   return (
-    <div id='cont' className='xl:mt-[200px] text-white w-[1000px] ml-auto mr-auto sm: mt-[90px] absolute bg-gray-900' >
+    <div id='cont' className='xl:mt-[200px] text-white w-[1000px] ml-auto mr-auto rounded-xl sm: mt-[90px] absolute bg-gray-900' >
       
       <h1 className='xl:text-4xl font-normal text-center mt-5 decoration-white font-medium'>Our collection</h1>
       <br></br>
@@ -28,11 +28,11 @@ function App() {
       <button className='xl: w-35 text-center rounded hover:bg-slate-700 w-[100px] sm: w-35 text-center rounded hover:bg-slate-700'>All products</button>
       <button className='xl: w-35 text-center rounded hover:bg-slate-700 w-[150px] sm: w-35 text-center rounded'>Available products</button>
       </div>
-      <div className='xl:grid grid-cols-3 gap-4 mt-10 sm:flex flex-col ml-auto mr-auto '>
+      <div className='xl:grid grid-cols-3 gap-4 mt-10 ml-12  sm:flex flex-col ml-auto mr-auto '>
        {coffe.map((datas)=>
       <div key={datas.id} className=''> 
       
-      <div className='ml-auto mr-auto'>
+      <div className='ml-auto mr-auto '>
       <div className ='bg-amber-400 rounded-full mt-2 ml-2 absolute w-20 text-center text-black'> {datas.popular && <h3>Popular</h3>}</div>
       <img src={datas.image} alt="Coffee Shop Background Image" className='rounded-xl' />
       </div>
