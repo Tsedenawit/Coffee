@@ -13,10 +13,10 @@ function App() {
     console.log(error)
   })
   } ,[])
-  console.log(coffe )
   return (
-    <div id='cont' className='xl:mt-[200px] text-white w-[1000px] ml-auto mr-auto rounded-xl sm: mt-[90px] absolute bg-gray-900' >
+    <div  id='cont'  >
       
+      <div className='xl:mt-[200px] text-white w-[100%] mx-auto rounded-xl sm: mt-[90px]'>
       <h1 className='xl:text-4xl font-normal text-center mt-5 decoration-white font-medium'>Our collection</h1>
       <br></br>
       <p className='xl: w-[450px] text-center ml-auto mr-auto sm: w-[200px] text-center'>Introducing our Coffee Collection, a selection of unique
@@ -53,6 +53,8 @@ function App() {
       </div>
       )} 
       </div>
+      </div>
+      
       
     </div>
   );
